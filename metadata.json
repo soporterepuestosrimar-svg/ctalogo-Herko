@@ -1,0 +1,6 @@
+{
+  "name": "Catálogo Repuestos Rimar",
+  "description": "Catálogo digital de repuestos automotrices con pedidos por WhatsApp, cotizador con IVA, exportación PDF y panel de administración.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

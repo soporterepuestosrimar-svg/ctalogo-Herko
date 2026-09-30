@@ -1,0 +1,27 @@
+{
+  "entities": {
+    "Product": {
+      "description": "Automotive spare parts catalog items with photos, prices, vehicle compatibility, and inventory status",
+      "properties": {
+        "id": { "type": "string", "description": "Unique product ID" },
+        "code": { "type": "string", "description": "Part number or article code" },
+        "description": { "type": "string", "description": "Part name and description" },
+        "price": { "type": "number", "description": "Price in COP" },
+        "brand": { "type": "string", "description": "Manufacturer or brand name" },
+        "category": { "type": "string", "description": "Part category" },
+        "vehicleCompatibility": { "type": "string", "description": "Vehicle compatibility model and years" },
+        "stockStatus": { "type": "string", "description": "Availability status" },
+        "imageUrl": { "type": "string", "description": "Photo URL or data URI" },
+        "notes": { "type": "string", "description": "Additional notes" },
+        "updatedAt": { "type": "string", "description": "ISO timestamp of last update" }
+      },
+      "required": ["id", "code", "description", "price", "brand", "category"]
+    }
+  },
+  "firestore": {
+    "/products/{productId}": {
+      "entity": "Product",
+      "description": "Catalog products readable by all visitors across all devices"
+    }
+  }
+}
